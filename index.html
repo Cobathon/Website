@@ -10,7 +10,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Your Name</a>
+            <a href="index.html" class="nav-logo">Jacob Bettinger</a>
             
             <!-- Desktop Menu -->
             <div class="nav-menu">
@@ -45,10 +45,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <h1>Software Engineer</h1>
+            <h1>Computer Science Student</h1>
             <p>
-                Building innovative solutions with modern technologies. 
-                Passionate about creating efficient, scalable applications.
+                Michigan State University | Expected Graduation 2026<br>
+                Passionate about systems programming, game development, and building efficient software solutions.
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">Get In Touch</a>
@@ -63,14 +63,15 @@
             <h2>About Me</h2>
             <div class="about-text container-narrow">
                 <p>
-                    I'm a software engineer with a passion for building elegant solutions to complex problems. 
-                    With several years of experience in full-stack development, I specialize in creating 
-                    responsive web applications that deliver exceptional user experiences.
+                    I'm a Computer Science student at Michigan State University with a minor in Game Design & Development. 
+                    As a two-time Dean's List honoree, I'm passionate about low-level systems programming, multithreading, 
+                    and building efficient software solutions that tackle complex computational challenges.
                 </p>
                 <p>
-                    My approach combines technical expertise with creative problem-solving, ensuring that 
-                    every project I work on is both functional and maintainable. I'm constantly learning 
-                    new technologies and best practices to stay at the forefront of software development.
+                    My experience spans from developing cache memory simulators and multithreaded order processing systems 
+                    to creating AI-driven game mechanics in Unity. I enjoy working on projects that require both technical 
+                    depth and creative problem-solving, whether it's optimizing performance with parallel computing or 
+                    designing engaging game experiences.
                 </p>
             </div>
         </div>
@@ -85,13 +86,78 @@
                 <div class="project-card">
                     <div class="project-image blue"></div>
                     <div class="project-content">
-                        <h3>Project Promotion</h3>
-                        <p>Full-stack web application with payment integration and real-time inventory management</p>
+                        <h3>Multithreaded Order Processing System</h3>
+                        <p>Producer-consumer model for processing retail orders with thread-safe operations and structured logging</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">pthreads</span>
+                            <span class="tech-tag">Semaphores</span>
+                            <span class="tech-tag">Mutexes</span>
                         </div>
-                        <a href="projects/projPromo.html" class="project-link">
+                        <a href="projects/order-processing.html" class="project-link">
+                            Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image green"></div>
+                    <div class="project-content">
+                        <h3>Cache Memory Simulator</h3>
+                        <p>Detailed cache simulator emulating load/store operations between CPU registers, cache, and RAM</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">File I/O</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Systems Programming</span>
+                        </div>
+                        <a href="projects/cache-simulator.html" class="project-link">
+                            Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image orange"></div>
+                    <div class="project-content">
+                        <h3>Secure User Authentication System</h3>
+                        <p>Flask-based authentication with SHA-256 password hashing and JWT session management</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">SHA-256</span>
+                        </div>
+                        <a href="projects/authentication.html" class="project-link">
+                            Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);"></div>
+                    <div class="project-content">
+                        <h3>Project Promotion (Game Development)</h3>
+                        <p>Turn-based RPG with A* pathfinding AI, conditional turn-based system, and modular behavior trees</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">A* Pathfinding</span>
+                            <span class="tech-tag">AI</span>
+                        </div>
+                        <a href="projects/game-project.html" class="project-link">
                             Learn More
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -108,16 +174,24 @@
         <div class="container">
             <h2>Skills & Technologies</h2>
             <div class="skills-container">
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">C++</span>
                 <span class="skill-tag">Python</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Assembly</span>
                 <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">GitLab</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Algorithms</span>
+                <span class="skill-tag">OOP</span>
+                <span class="skill-tag">Multithreading</span>
+                <span class="skill-tag">OpenMP</span>
+                <span class="skill-tag">CUDA</span>
+                <span class="skill-tag">HPCC</span>
             </div>
         </div>
     </section>
@@ -131,7 +205,7 @@
                 Whether you have a question or just want to say hi, feel free to reach out!
             </p>
             <div class="social-links">
-                <a href="bettin12@msu.edu" aria-label="Email">
+                <a href="mailto:Bettin12@msu.edu" aria-label="Email">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
@@ -140,19 +214,19 @@
                     <svg fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                     </svg>
-                </a><!--
+                </a>
                 <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
                     <svg fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
                     </svg>
-                </a> -->
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Jacob Bettinger. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>

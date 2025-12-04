@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Memory Simulator - Jacob Bettinger</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero" style="background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);">
+        <div class="container">
+            <h1>Cache Memory Simulator</h1>
+            <p>Detailed cache simulator emulating load/store operations between CPU registers, cache, and RAM</p>
+            <div class="tech-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">File I/O</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Systems Programming</span>
+                <span class="tech-tag">Memory Architecture</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview-section">
+        <div class="container-narrow">
+            <h2>Project Overview</h2>
+            <p>
+                Built a comprehensive cache memory simulator in C++ that accurately models the behavior of a CPU cache 
+                system, including load and store operations between CPU registers, cache memory, and RAM. This project 
+                demonstrates deep understanding of computer architecture and memory hierarchy.
+            </p>
+            <p>
+                The simulator implements a realistic cache model with tag management, valid and modified (dirty) bits, 
+                and block-level data storage. It handles cache hits and misses, implements write-back policies, and 
+                manages block transfers between cache and RAM to closely mimic real hardware behavior.
+            </p>
+            <p>
+                Completed in June 2025 for my Computer Architecture course, this project required meticulous attention 
+                to detail in implementing cache line structures, addressing logic, and ensuring cycle-accurate simulation 
+                of memory operations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                    </div>
+                    <h3>Cache Line Data Structures</h3>
+                    <p>Designed comprehensive cache line structures with tag fields, valid bits, modified (dirty) bits, and block-level data storage arrays.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Load/Store Operations</h3>
+                    <p>Implemented CPU register to cache and cache to RAM data transfers, accurately simulating real memory access patterns and latencies.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Tag Management System</h3>
+                    <p>Sophisticated address parsing and tag comparison logic for determining cache hits and misses with configurable cache organization parameters.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Memory-Mapped RAM Loading</h3>
+                    <p>Parses hex-formatted memory files to initialize simulated RAM with realistic memory contents, supporting various test scenarios and workloads.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </div>
+                    <h3>Write-Back Policy</h3>
+                    <p>Implements write-back cache policy with dirty bit tracking, minimizing memory writes and accurately modeling modern cache coherency protocols.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Performance Statistics</h3>
+                    <p>Tracks hit rates, miss rates, write-backs, and memory accesses to provide detailed performance analysis and cache efficiency metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="overview-section">
+        <div class="container-narrow">
+            <h2>Technical Implementation</h2>
+            <p>
+                The cache simulator uses object-oriented design with classes representing cache lines, cache sets, 
+                and the overall cache structure. Each cache line contains fields for the tag, valid bit, modified 
+                bit, and a data block array. The addressing scheme extracts tag, set index, and block offset from 
+                memory addresses to locate data in the cache hierarchy.
+            </p>
+            <p>
+                For cache hits, data is read from or written to the appropriate cache line. For cache misses, the 
+                simulator implements replacement policies (like LRU) to evict cache lines when necessary. When a 
+                dirty line is evicted, it writes back the modified block to RAM before loading the new block from 
+                memory.
+            </p>
+            <p>
+                File I/O handles reading hex-formatted RAM initialization files, parsing them into memory structures, 
+                and supporting trace-driven simulation where sequences of load/store operations test cache behavior 
+                under various access patterns. The simulator outputs detailed logs of each operation including hits, 
+                misses, evictions, and write-backs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Results & Learning Outcomes</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Accurate Hardware Modeling</h3>
+                    <p>Successfully replicated real cache behavior including hit/miss logic, write-back policies, and block transfers matching hardware specifications.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Cache Performance Analysis</h3>
+                    <p>Enabled systematic study of cache performance under different configurations, access patterns, and workloads for educational insights.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Systems Programming Skills</h3>
+                    <p>Strengthened understanding of memory hierarchies, address translation, and low-level data structure design for high-performance systems.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Clean Architecture Design</h3>
+                    <p>Implemented modular, well-documented code with clear separation of concerns between cache logic, memory management, and I/O operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jacob Bettinger. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

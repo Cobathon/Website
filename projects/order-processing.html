@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multithreaded Order Processing System - Jacob Bettinger</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>Multithreaded Order Processing System</h1>
+            <p>Producer-consumer model for processing retail orders with thread-safe operations and structured logging</p>
+            <div class="tech-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">pthreads</span>
+                <span class="tech-tag">Semaphores</span>
+                <span class="tech-tag">Mutexes</span>
+                <span class="tech-tag">POSIX Threads</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview-section">
+        <div class="container-narrow">
+            <h2>Project Overview</h2>
+            <p>
+                Developed a sophisticated multithreaded order processing system that simulates a retail environment 
+                where multiple producers generate customer orders and multiple consumers process them concurrently. 
+                The system demonstrates advanced understanding of parallel programming concepts and thread synchronization.
+            </p>
+            <p>
+                The implementation uses the classic producer-consumer pattern with a shared buffer, ensuring thread-safe 
+                access through careful use of POSIX threads, semaphores, and mutexes. This project showcases my ability 
+                to build robust concurrent systems that handle real-world scenarios like inventory management and order 
+                fulfillment.
+            </p>
+            <p>
+                Completed in May 2025 as part of my coursework in parallel computing, this project required deep 
+                understanding of operating system primitives, race condition prevention, and deadlock avoidance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3>Producer-Consumer Model</h3>
+                    <p>Implemented multiple producer threads generating orders and consumer threads processing them from a shared circular buffer with proper synchronization.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3>Thread-Safe Operations</h3>
+                    <p>Used semaphores and mutexes to ensure proper synchronization, preventing race conditions and ensuring data integrity across concurrent operations.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                        </svg>
+                    </div>
+                    <h3>Circular Buffer Management</h3>
+                    <p>Designed efficient circular indexing for the shared buffer with producer-end signaling to coordinate thread communication and prevent buffer overflow.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Structured Logging System</h3>
+                    <p>Built comprehensive logging to track customer transactions, order status, and thread activities for debugging and performance analysis.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                        </svg>
+                    </div>
+                    <h3>Inventory Persistence</h3>
+                    <p>Integrated file I/O for loading initial inventory, tracking changes during order processing, and regenerating formatted output for audit trails.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Optimized thread scheduling and synchronization overhead to maximize throughput while maintaining correctness and avoiding deadlocks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="overview-section">
+        <div class="container-narrow">
+            <h2>Technical Implementation</h2>
+            <p>
+                The system architecture revolves around POSIX threads (pthreads) with careful synchronization using 
+                semaphores for buffer counting and mutexes for critical section protection. Producer threads generate 
+                orders at varying rates and place them in a bounded circular buffer, while consumer threads retrieve 
+                and process orders, updating inventory accordingly.
+            </p>
+            <p>
+                Key challenges included preventing race conditions when multiple threads access shared data structures, 
+                implementing proper signaling for producer termination, and ensuring fair scheduling among consumers. 
+                I used counting semaphores to track empty and full buffer slots, and a mutex to protect the critical 
+                sections where the buffer index is modified.
+            </p>
+            <p>
+                The logging system captures detailed transaction information including thread IDs, timestamps, order 
+                details, and inventory changes. File parsing handles initial inventory loading, and output regeneration 
+                creates formatted reports showing final inventory state and transaction history.
+            </p>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Results & Learning Outcomes</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Zero Race Conditions</h3>
+                    <p>Achieved complete thread safety with no race conditions or data corruption across thousands of test orders through rigorous synchronization.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Deadlock-Free Design</h3>
+                    <p>Carefully ordered lock acquisition and proper semaphore usage ensured the system never deadlocked, even under high thread contention.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Scalable Architecture</h3>
+                    <p>System scales efficiently with configurable numbers of producer and consumer threads, maintaining correctness at any scale.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Deep Systems Understanding</h3>
+                    <p>Gained hands-on experience with low-level threading primitives, synchronization mechanisms, and concurrent programming best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jacob Bettinger. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 

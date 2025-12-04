@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure User Authentication System - Jacob Bettinger</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="project-hero" style="background: linear-gradient(135deg, #f97316 0%, #dc2626 100%);">
+        <div class="container">
+            <h1>Secure User Authentication System</h1>
+            <p>Flask-based authentication with SHA-256 password hashing and JWT session management</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SHA-256</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Database Management</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview-section">
+        <div class="container-narrow">
+            <h2>Project Overview</h2>
+            <p>
+                Developed a production-ready authentication system using Flask that implements secure user registration, 
+                login, and session management. The system prioritizes security through industry-standard cryptographic 
+                hashing and token-based authentication, demonstrating my understanding of web security best practices.
+            </p>
+            <p>
+                The application handles user registration with secure password storage, implements login verification 
+                using salted hash comparison, and manages user sessions through JSON Web Tokens (JWT). This ensures 
+                that user credentials are never stored in plain text and authentication states are maintained securely 
+                across requests.
+            </p>
+            <p>
+                Completed in March 2025 for my Web Development course, this project showcases my ability to build 
+                secure backend systems that protect user data while providing seamless authentication experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                        </svg>
+                    </div>
+                    <h3>User Registration</h3>
+                    <p>Secure user account creation with input validation, duplicate checking, and automated password hashing with unique salts for each user.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3>SHA-256 Password Hashing</h3>
+                    <p>Implemented cryptographic hashing using Python's hashlib with random salt generation, ensuring passwords are never stored in plain text.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                        </svg>
+                    </div>
+                    <h3>JWT Session Management</h3>
+                    <p>Utilizes JSON Web Tokens for stateless session authentication, enabling secure API access without server-side session storage.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3>Secure Login Verification</h3>
+                    <p>Authenticates users by comparing hashed passwords with salted hash comparison, preventing timing attacks and credential exposure.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                        </svg>
+                    </div>
+                    <h3>Database Integration</h3>
+                    <p>Persistent user data storage with proper indexing, efficient queries, and secure handling of sensitive information in the database.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                        </svg>
+                    </div>
+                    <h3>User Data Management</h3>
+                    <p>RESTful API endpoints for creating, reading, updating, and managing user profiles with proper authorization checks and access controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="overview-section">
+        <div class="container-narrow">
+            <h2>Technical Implementation</h2>
+            <p>
+                The backend is built with Flask, Python's lightweight web framework, providing RESTful API endpoints 
+                for user operations. Password security is implemented using Python's hashlib library to generate 
+                SHA-256 hashes combined with randomly generated salts stored alongside the hashed passwords. This 
+                salt-and-hash approach ensures that even identical passwords produce different hash values.
+            </p>
+            <p>
+                Upon successful login, the system generates a JWT containing the user's ID and expiration time, 
+                signed with a secret key. This token is sent to the client and must be included in subsequent 
+                requests to protected endpoints. The server validates tokens by verifying the signature and checking 
+                expiration, providing stateless authentication without session storage.
+            </p>
+            <p>
+                The database schema includes user tables with fields for username, email, hashed password, and salt. 
+                All database queries use parameterized statements to prevent SQL injection attacks. The Flask application 
+                includes middleware for CORS handling, request validation, and error handling to provide robust and 
+                secure API responses.
+            </p>
+        </div>
+    </section>
+
+    <!-- Security Considerations -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Security Measures Implemented</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Password Security</h3>
+                    <p>SHA-256 hashing with unique random salts prevents rainbow table attacks and ensures password confidentiality even if the database is compromised.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>SQL Injection Prevention</h3>
+                    <p>Parameterized queries and input sanitization protect against SQL injection attacks across all database operations.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Token-Based Auth</h3>
+                    <p>JWT implementation with expiration times and signature verification prevents session hijacking and unauthorized access.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Input Validation</h3>
+                    <p>Comprehensive validation of all user inputs including email format checking, password strength requirements, and username constraints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="overview-section">
+        <div class="container-narrow">
+            <h2>Results & Learning Outcomes</h2>
+            <p>
+                This project provided hands-on experience with critical web security concepts including cryptographic 
+                hashing, token-based authentication, and secure API design. I gained practical knowledge of how to 
+                protect user credentials and maintain secure sessions in web applications.
+            </p>
+            <p>
+                The authentication system successfully handles user registration and login with industry-standard 
+                security practices, demonstrating my ability to implement secure backend systems. This project 
+                reinforced the importance of never storing plain-text passwords and using proven cryptographic 
+                methods for user authentication.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jacob Bettinger. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
