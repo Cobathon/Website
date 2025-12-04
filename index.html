@@ -3,78 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>Your Name - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-50">
+<body>
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="text-xl font-bold text-gray-800">Your Name</div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
-                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
-                    <a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden">
-                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Your Name</a>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <svg id="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-4 py-3 space-y-3">
-                <a href="#about" class="block text-gray-600 hover:text-gray-900">About</a>
-                <a href="#projects" class="block text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="#skills" class="block text-gray-600 hover:text-gray-900">Skills</a>
-                <a href="#contact" class="block text-gray-600 hover:text-gray-900">Contact</a>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-                Software Engineer
-            </h1>
-            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Software Engineer</h1>
+            <p>
                 Building innovative solutions with modern technologies. 
                 Passionate about creating efficient, scalable applications.
             </p>
-            <div class="flex justify-center space-x-4">
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-                    Get In Touch
-                </a>
-                <a href="#projects" class="border border-gray-300 px-6 py-3 rounded-lg hover:border-gray-400 transition">
-                    View Work
-                </a>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn-secondary">View Work</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
-            <div class="text-gray-600 space-y-4 max-w-3xl">
+    <section id="about" class="section-white">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-text container-narrow">
                 <p>
                     I'm a software engineer with a passion for building elegant solutions to complex problems. 
                     With several years of experience in full-stack development, I specialize in creating 
@@ -90,64 +77,67 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="projects" class="section-gray">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">E-Commerce Platform</h3>
-                        <p class="text-gray-600 mb-4">Full-stack web application with payment integration and real-time inventory management</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">React</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">Node.js</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">MongoDB</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">Stripe</span>
+                <div class="project-card">
+                    <div class="project-image blue"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack web application with payment integration and real-time inventory management</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-700 flex items-center">
-                            View Project
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        <a href="projects/ecommerce.html" class="project-link">
+                            Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Task Management App</h3>
-                        <p class="text-gray-600 mb-4">Collaborative project management tool with drag-and-drop interface and team features</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">Vue.js</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">Firebase</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">Tailwind CSS</span>
+                <div class="project-card">
+                    <div class="project-image green"></div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative project management tool with drag-and-drop interface and team features</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Tailwind CSS</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-700 flex items-center">
-                            View Project
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        <a href="projects/task-manager.html" class="project-link">
+                            Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Data Visualization Dashboard</h3>
-                        <p class="text-gray-600 mb-4">Interactive analytics dashboard for business intelligence and reporting</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">React</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">D3.js</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">Python</span>
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded">PostgreSQL</span>
+                <div class="project-card">
+                    <div class="project-image orange"></div>
+                    <div class="project-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive analytics dashboard for business intelligence and reporting</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-700 flex items-center">
-                            View Project
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        <a href="projects/dashboard.html" class="project-link">
+                            Learn More
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </a>
                     </div>
@@ -157,45 +147,45 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12">Skills & Technologies</h2>
-            <div class="flex flex-wrap gap-3">
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">JavaScript</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">TypeScript</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">React</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">Node.js</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">Python</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">SQL</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">Git</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">AWS</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">Docker</span>
-                <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg text-lg">REST APIs</span>
+    <section id="skills" class="section-white">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-container">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">REST APIs</span>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
-            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+    <section id="contact" class="section-gray contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>
                 I'm always interested in hearing about new projects and opportunities. 
                 Whether you have a question or just want to say hi, feel free to reach out!
             </p>
-            <div class="flex justify-center space-x-6">
-                <a href="mailto:your.email@example.com" class="text-gray-600 hover:text-gray-900">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="social-links">
+                <a href="mailto:your.email@example.com" aria-label="Email">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                 </a>
-                <a href="https://github.com/Cobathon" class="text-gray-600 hover:text-gray-900">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <a href="https://github.com/Cobathon" aria-label="GitHub">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="https://linkedin.com/in/yourusername" class="text-gray-600 hover:text-gray-900">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
                     </svg>
                 </a>
@@ -204,34 +194,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white py-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-        </div>
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const closeIcon = document.getElementById('close-icon');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
