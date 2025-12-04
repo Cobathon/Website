@@ -120,7 +120,7 @@
                         </svg>
                     </div>
                     <h3>State Machine Integration</h3>
-                    <p>Integrated finite state machines with behavior trees to manage character states (idle, moving, attacking, defending) with clean transitions.</p>
+                    <p>Integrated finite state machines with behavior trees to manage character states (idle, moving, attacking) with clean transitions.</p>
                 </div>
             </div>
         </div>
@@ -131,23 +131,18 @@
         <div class="container-narrow">
             <h2>Technical Implementation</h2>
             <p>
-                The A* pathfinding system uses a priority queue to explore the game grid, calculating f-scores (g + h) 
-                where g is the actual cost from start and h is the heuristic estimate to goal. The algorithm considers 
-                terrain costs, obstacles, and unit positions to find optimal movement paths. I optimized the 
-                implementation with node pooling and grid caching to minimize garbage collection during pathfinding.
-            </p>
-            <p>
-                The Conditional Turn-Based system uses a min-heap (priority queue) where character initiative values 
-                determine turn order. When a character acts, their next turn time is calculated based on their speed 
-                stat and action costs, then re-inserted into the heap. This provides O(log n) complexity for turn 
-                management compared to O(n) for simple list-based systems, crucial for performance with many characters.
-            </p>
-            <p>
                 Behavior trees structure AI decision-making through composite nodes (selectors, sequences) and leaf 
                 nodes (actions, conditions). Each enemy type has a customizable behavior tree defining their combat 
                 strategy—aggressive enemies prioritize attacking, defensive enemies seek cover, and support enemies 
                 heal allies. The modular design allows rapid prototyping of new AI personalities without code changes.
             </p>
+            <p>
+                Something here
+            </p>
+            <p>
+                Something here
+            </p>
+            
         </div>
     </section>
 
