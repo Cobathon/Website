@@ -545,133 +545,108 @@ footer p {
     height: 32px;
 }
 
-/* Enhanced Project Detail Page Styles */
-.role-text {
-    font-size: 1.5rem;
+/* Enhanced Project Detail Page Styles - Condensed & Polished */
+
+/* Info Cards Grid */
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .info-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.info-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h3 {
+    font-size: 0.875rem;
     font-weight: 600;
-    color: #111827;
-    margin-bottom: 0;
-}
-
-.goals-list,
-.outcomes-list,
-.contributions-list,
-.takeaways-list,
-.learned-list,
-.future-goals-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1rem;
-}
-
-.goals-list li,
-.outcomes-list li,
-.contributions-list li,
-.takeaways-list li,
-.learned-list li,
-.future-goals-list li {
-    padding: 0.75rem 0;
-    padding-left: 1.5rem;
-    position: relative;
     color: #6b7280;
-    line-height: 1.7;
-}
-
-.goals-list li::before,
-.outcomes-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #8b5cf6;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.contributions-list li::before {
-    content: "";
-}
-
-.takeaways-list li::before,
-.learned-list li::before,
-.future-goals-list li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: #8b5cf6;
-    font-weight: bold;
-}
-
-.team-context {
-    background-color: #f3f4f6;
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
-    color: #6b7280;
-    line-height: 1.7;
-}
-
-.project-details {
-    margin-top: 1rem;
-}
-
-.project-details p {
-    margin-bottom: 0.75rem;
-    color: #6b7280;
-    font-size: 1.125rem;
-}
-
-.project-details strong {
-    color: #111827;
-}
-
-.challenges-intro {
-    margin-bottom: 2rem;
-    color: #6b7280;
-}
-
-.challenge-block {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.challenge-block:last-child {
-    border-bottom: none;
-}
-
-.challenge-block h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #111827;
-    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
     margin-top: 0;
 }
 
-.challenge-block p {
-    margin-bottom: 1rem;
-    color: #6b7280;
-    line-height: 1.7;
-}
-
-.challenge-block strong {
-    color: #111827;
+.info-card p {
+    font-size: 1.125rem;
     font-weight: 600;
+    color: #111827;
+    margin: 0;
 }
 
-.code-intro {
-    margin-bottom: 2rem;
-    color: #6b7280;
+/* Contributions Grid */
+.contributions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
 }
 
-.code-block {
-    margin-bottom: 3rem;
+@media (min-width: 768px) {
+    .contributions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contribution-item {
+    background: #f9fafb;
     padding: 1.5rem;
-    background-color: #f9fafb;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid #8b5cf6;
+    transition: background-color 0.2s;
+}
+
+.contribution-item:hover {
+    background: #f3f4f6;
+}
+
+.contribution-item h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.contribution-item p {
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Compact Challenge Blocks */
+.challenge-compact {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #8b5cf6;
 }
 
-.code-block h3 {
+.challenge-compact:last-child {
+    margin-bottom: 0;
+}
+
+.challenge-compact h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: #111827;
@@ -679,51 +654,207 @@ footer p {
     margin-top: 0;
 }
 
-.code-block p {
-    margin-bottom: 1rem;
+.challenge-compact p {
+    margin-bottom: 0.75rem;
     color: #6b7280;
     line-height: 1.7;
 }
 
-.code-block strong {
+.challenge-compact p:last-child {
+    margin-bottom: 0;
+}
+
+.challenge-compact strong {
     color: #111827;
     font-weight: 600;
 }
 
-.code-features-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1rem;
+/* Tech System Cards */
+.tech-system-card {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
 }
 
-.code-features-list li {
+.tech-system-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tech-system-card:last-child {
+    margin-bottom: 0;
+}
+
+.tech-system-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+}
+
+.tech-system-card p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.tech-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-feature-tag {
+    background: #ede9fe;
+    color: #7c3aed;
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+}
+
+/* Process Timeline */
+.process-timeline {
+    margin-top: 2rem;
+}
+
+.process-step {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.process-step::before {
+    content: "";
+    position: absolute;
+    left: 1.25rem;
+    top: 3rem;
+    bottom: -2rem;
+    width: 2px;
+    background: #e5e7eb;
+}
+
+.process-step:last-child::before {
+    display: none;
+}
+
+.process-number {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.process-content {
+    flex: 1;
+    padding-top: 0.25rem;
+}
+
+.process-content h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.process-content p {
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Reflection Grid */
+.reflection-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .reflection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.reflection-card {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.reflection-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.compact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.compact-list li {
     padding: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
     color: #6b7280;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-.code-features-list li::before {
-    content: "✓";
+.compact-list li::before {
+    content: "→";
     position: absolute;
     left: 0;
-    color: #10b981;
+    color: #8b5cf6;
     font-weight: bold;
 }
 
-.overview-section h3,
-.features-section h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #111827;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+/* Goals Compact */
+.goals-compact {
+    margin-top: 1.5rem;
 }
 
-.overview-section h3:first-child,
-.features-section h3:first-child {
-    margin-top: 0;
+.goals-compact p {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.goals-compact p:last-child {
+    border-bottom: none;
+}
+
+.goals-compact p::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #8b5cf6;
+    font-weight: bold;
 }
 
 /* Game Visuals Grid */
