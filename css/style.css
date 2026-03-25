@@ -617,7 +617,7 @@ footer p {
 }
 
 .shot-spline {
-    background-image: linear-gradient(135deg, #1d4ed8, #0f766e), url("../images/endless-trucker/perf-spline.png");
+    background-image: linear-gradient(135deg, #1d4ed8, #0f766e), url("../images/SplineGif.gif");
 }
 
 .shot-fps {
