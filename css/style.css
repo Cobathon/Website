@@ -208,6 +208,34 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* Education Section */
+.education-card {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    max-width: 52rem;
+}
+
+.education-header {
+    margin-bottom: 0.75rem;
+}
+
+.education-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.education-header p,
+.education-card p {
+    color: #4b5563;
+}
+
+.education-degree {
+    margin-bottom: 0.75rem;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
@@ -263,6 +291,10 @@ h2 {
 
 .project-image.orange {
     background: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
+}
+
+.project-image.purple {
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
 }
 
 .project-content {

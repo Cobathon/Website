@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Software Engineer Portfolio</title>
+    <title>Jacob Bettinger - Software Engineer Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,6 +15,7 @@
             <!-- Desktop Menu -->
             <div class="nav-menu">
                 <a href="#about">About</a>
+                <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
@@ -35,6 +36,7 @@
         <div id="mobile-menu" class="mobile-menu">
             <div class="mobile-menu-links">
                 <a href="#about">About</a>
+                <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
@@ -45,10 +47,27 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <h1>Software Engineer</h1>
+            <h1>Computer Science Student and Software Engineer</h1>
             <p>
-                Passionate about systems programming, game development, and building efficient software solutions.
+                Michigan State University student focused on systems programming, performance optimization,
+                and game development. Two-time Dean's List honoree based in Novi, MI.
             </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-white">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-card">
+                <div class="education-header">
+                    <h3>Michigan State University</h3>
+                    <p>East Lansing, MI | August 2022 - Current</p>
+                </div>
+                <p class="education-degree">Bachelor of Science in Computer Science Engineering, Minor in Game Design and Development</p>
+                <p><strong>Honors:</strong> 2x Dean's List</p>
+                <p><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Object Oriented Programming, Computer Architecture, Game Design and Development I and II, Information Management and the Cloud, Web Design and Development, Parallel Computing, Advanced Algorithms</p>
+            </div>
         </div>
     </section>
 
@@ -60,17 +79,17 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-image blue"></div>
+                    <div class="project-image purple"></div>
                     <div class="project-content">
-                        <h3>Multithreaded Order Processing System</h3>
-                        <p>Producer-consumer model for processing retail orders with thread-safe operations and structured logging</p>
+                        <h3>Endless Trucker</h3>
+                        <p>Unity game project with optimized lane spawning, spline-based movement, and performance-focused systems design</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">pthreads</span>
-                            <span class="tech-tag">Semaphores</span>
-                            <span class="tech-tag">Mutexes</span>
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Optimization</span>
+                            <span class="tech-tag">Systems Design</span>
                         </div>
-                        <a href="projects/order-processing.html" class="project-link">
+                        <a href="projects/endless-trucker.html" class="project-link">
                             Learn More
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -127,7 +146,7 @@
                         <img src="images/projpromo.png" alt="Project description">
                     </div>
                     <div class="project-content">
-                        <h3>Project Promotion (Game Development)</h3>
+                        <h3>Project Promotion</h3>
                         <p>Turn-based RPG with A* pathfinding AI, conditional turn-based system, and modular behavior trees</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Unity</span>
@@ -152,15 +171,13 @@
             <h2>About Me</h2>
             <div class="about-text container-narrow">
                 <p>
-                    I'm a Computer Science student at Michigan State University with a minor in Game Design & Development. 
-                    I'm passionate about low-level systems programming, multithreading, and building efficient 
-                    software solutions that tackle complex computational challenges.
+                    I am a Computer Science student at Michigan State University with a minor in Game Design and Development.
+                    I enjoy building efficient software systems that balance clean design, performance, and reliability.
                 </p>
                 <p>
-                    My experience spans from developing cache memory simulators and multithreaded order processing systems 
-                    to creating AI-driven game mechanics in Unity. I enjoy working on projects that require both technical 
-                    depth and creative problem-solving, whether it's optimizing performance with parallel computing or 
-                    designing engaging game experiences.
+                    My recent work includes performance-focused Unity systems, a cache memory simulator in C++, and
+                    secure backend authentication in Flask. I am especially interested in systems-level development,
+                    optimization, and practical software engineering challenges.
                 </p>
             </div>
         </div>
@@ -174,6 +191,7 @@
                 <span class="skill-tag">C++</span>
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">C#</span>
+                <span class="skill-tag">CSS</span>
                 <span class="skill-tag">JavaScript</span>
                 <span class="skill-tag">HTML</span>
                 <span class="skill-tag">C</span>
@@ -181,14 +199,8 @@
                 <span class="skill-tag">SQL</span>
                 <span class="skill-tag">Unity</span>
                 <span class="skill-tag">Flask</span>
-                <span class="skill-tag">GitLab</span>
-                <span class="skill-tag">Data Structures</span>
-                <span class="skill-tag">Algorithms</span>
-                <span class="skill-tag">OOP</span>
-                <span class="skill-tag">Multithreading</span>
-                <span class="skill-tag">OpenMP</span>
-                <span class="skill-tag">CUDA</span>
-                <span class="skill-tag">HPCC</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
             </div>
         </div>
     </section>
@@ -198,8 +210,8 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <p>
-                I'm always interested in hearing about new projects and opportunities. 
-                Whether you have a question or just want to say hi, feel free to reach out!
+                I am open to internship and early-career software engineering opportunities.
+                For recruiting or project inquiries, please reach out by email.
             </p>
             <div class="social-links">
                 <a href="mailto:Bettin12@msu.edu" aria-label="Email">
