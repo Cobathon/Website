@@ -1023,6 +1023,10 @@ body.dark-theme nav {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+body.dark-theme .nav-logo {
+    color: #f1f5f9;
+}
+
 body.dark-theme .nav-menu a,
 body.dark-theme .back-link {
     color: #cbd5e1;
@@ -1052,6 +1056,75 @@ body.dark-theme .mobile-menu-btn svg {
 
 body.dark-theme h2 {
     color: #f1f5f9;
+}
+
+body.dark-theme .hero h1 {
+    color: #f8fafc;
+}
+
+body.dark-theme .hero p,
+body.dark-theme .about-text,
+body.dark-theme .about-text p,
+body.dark-theme .contact p,
+body.dark-theme .education-header p,
+body.dark-theme .education-card p,
+body.dark-theme .project-meta,
+body.dark-theme .project-card p,
+body.dark-theme .feature-card p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .section-white,
+body.dark-theme .section-gray,
+body.dark-theme .overview-section,
+body.dark-theme .features-section {
+    background-color: #0f172a;
+}
+
+body.dark-theme .education-card,
+body.dark-theme .project-card,
+body.dark-theme .feature-card,
+body.dark-theme .performance-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .project-card h3,
+body.dark-theme .education-header h3,
+body.dark-theme .feature-card h3 {
+    color: #f1f5f9;
+}
+
+body.dark-theme .skill-tag {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    border: 1px solid #334155;
+}
+
+body.dark-theme .tech-tag {
+    background-color: #312e81;
+    color: #c4b5fd;
+}
+
+body.dark-theme .project-link {
+    color: #93c5fd;
+}
+
+body.dark-theme .project-link:hover {
+    color: #bfdbfe;
+}
+
+body.dark-theme .social-links a {
+    color: #cbd5e1;
+}
+
+body.dark-theme .social-links a:hover {
+    color: #ffffff;
+}
+
+body.dark-theme .performance-card figcaption {
+    color: #cbd5e1;
 }
 
 body.dark-theme .overview-section .container-narrow,
