@@ -112,7 +112,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    padding: 8rem 1rem 5rem;
+    padding: 7rem 1rem 3.25rem;
     text-align: center;
 }
 
@@ -175,7 +175,7 @@ nav {
 
 /* Sections */
 section {
-    padding: 5rem 1rem;
+    padding: 3.25rem 1rem;
 }
 
 .section-white {
@@ -247,8 +247,8 @@ h2 {
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -306,7 +306,7 @@ h2 {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1.1rem 1.15rem;
 }
 
 .project-meta {
@@ -339,14 +339,14 @@ h2 {
 
 .project-card p {
     color: #475569;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    gap: 0.45rem;
+    margin-bottom: 0.75rem;
 }
 
 .tech-tag {
@@ -387,7 +387,7 @@ h2 {
     background-color: #ffffff;
     color: #0f172a;
     border: 1px solid #dbe3ef;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 999px;
     font-size: 1rem;
 }
@@ -439,7 +439,7 @@ footer p {
 
 /* Project Detail Page Styles */
 .project-hero {
-    padding: 6rem 1rem 3rem;
+    padding: 5rem 1rem 2.25rem;
     background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
     color: white;
 }
@@ -480,7 +480,7 @@ footer p {
 }
 
 .overview-section {
-    padding: 4rem 1rem;
+    padding: 2.6rem 1rem;
     background-color: white;
 }
 
@@ -494,15 +494,15 @@ footer p {
 }
 
 .features-section {
-    padding: 4rem 1rem;
+    padding: 2.6rem 1rem;
     background-color: #f9fafb;
 }
 
 .features-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 0.9rem;
+    margin-top: 1.2rem;
 }
 
 @media (min-width: 768px) {
@@ -513,7 +513,7 @@ footer p {
 
 .feature-card {
     background-color: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
@@ -574,6 +574,61 @@ footer p {
 
 .feature-card p {
     color: #6b7280;
+}
+
+/* Endless Trucker Performance Gallery */
+.performance-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 900px) {
+    .performance-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.performance-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.performance-shot {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.performance-shot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.05));
+}
+
+.shot-cache {
+    background-image: linear-gradient(135deg, #312e81, #2563eb), url("../images/endless-trucker/perf-cache.png");
+}
+
+.shot-spline {
+    background-image: linear-gradient(135deg, #1d4ed8, #0f766e), url("../images/endless-trucker/perf-spline.png");
+}
+
+.shot-fps {
+    background-image: linear-gradient(135deg, #7c3aed, #9333ea), url("../images/endless-trucker/perf-fps.png");
+}
+
+.performance-card figcaption {
+    margin: 0;
+    padding: 0.65rem 0.8rem;
+    color: #475569;
+    font-size: 0.88rem;
 }
 
 /* Responsive Typography */
