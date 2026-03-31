@@ -613,7 +613,7 @@ footer p {
 }
 
 .shot-cache {
-    background-image: linear-gradient(135deg, #312e81, #2563eb), url("../images/endless-trucker/perf-cache.png");
+    background-image: url("../images/TerrainSpawn.gif");
 }
 
 .shot-spline {
